@@ -1,79 +1,175 @@
 <!DOCTYPE html>
 <html>
+<head>
+    <title>大屏轮播营销网站</title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet" media="screen">
+    <link href="css/carouselMarket.css" rel="stylesheet" media="screen">
 
-  <head>
-    <meta charset='utf-8' />
-    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
-    <meta name="description" content="Bootstrapdemo : " />
 
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+</head>
+<body>
 
-    <title>Bootstrapdemo</title>
-  </head>
 
-  <body>
+<!-- 导航条 -->
 
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/sherlock221/BootstrapDemo">View on GitHub</a>
+<div class="navbar-wrapper">
+<div class="container">
+    <div class="navbar navbar-inverse ">
+        <div class="navbar-inner">
+            <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
 
-          <h1 id="project_title">Bootstrapdemo</h1>
-          <h2 id="project_tagline"></h2>
+            <a class="brand" href="#">企话通</a>
 
-            <section id="downloads">
-              <a class="zip_download_link" href="https://github.com/sherlock221/BootstrapDemo/zipball/master">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="https://github.com/sherlock221/BootstrapDemo/tarball/master">Download this project as a tar.gz file</a>
-            </section>
-        </header>
+            <div class="nav-collapse collapse">
+
+                <ul class="nav">
+                    <li class="active"><a href="#">首页</a></li>
+                    <li><a href="#about">产品介绍</a></li>
+                    <li><a href="#contact">功能介绍</a></li>
+                    <!-- Read about Bootstrap dropdowns at http://twbs.github.com/bootstrap/javascript.html#dropdowns -->
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">帮助? <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">企话通是什么?</a></li>
+                            <li><a href="#">企话通适用于那些行业?</a></li>
+                            <li><a href="#">企话通能为你做什么?/</a></li>
+                            <li class="divider"></li>
+                            <li class="nav-header">外呼管理</li>
+                            <li><a href="#">如何发起外呼?</a></li>
+                            <li><a href="#">如何查看正在外呼的任务?</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+
+<!-- Carousel -->
+<div id="myCarousel" class="carousel slide">
+    <div class="carousel-inner">
+        <div class="item active">
+            <img src="img/slide-01.jpg" alt="">
+            <div class="container">
+                <div class="carousel-caption">
+                    <h1>高效 精准 语音营销</h1>
+                    <p class="lead">
+                        简单 , 智能 , 提升效率 外呼so easy
+                    </p>
+                    <a class="btn btn-large btn-primary" href="#">立即注册体验</a>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <img src="img/slide-02.jpg" alt="">
+            <div class="container">
+                <div class="carousel-caption">
+                    <h1> 一键锁定目标客户</h1>
+                    <p class="lead">
+                        有效果才是好工具,有订单才是硬道理
+                    </p>
+                    <a class="btn btn-large btn-primary" href="#">立即注册体验</a>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <img src="img/slide-03.jpg" alt="">
+            <div class="container">
+                <div class="carousel-caption">
+                    <h1>领导语音营销第一品牌</h1>
+                     <ul class="unstyled">
+                         <li>客户在线搜索</li>
+                         <li>语音群呼筛选</li>
+                         <li>在线人工转接</li>
+                         <li>持续客户跟进</li>
+                     </ul>
+
+                    <a class="btn btn-large btn-primary" href="#">立即注册体验</a>
+                </div>
+            </div>
+        </div>
     </div>
 
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <h3>
-<a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
 
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">&rsaquo;</a>
+</div><!-- /.carousel -->
 
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
 
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
 
-<h3>
-<a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Designer Templates</h3>
 
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
+<!-- 功能展示 -->
+<div class="container marketing">
 
-<h3>
-<a name="rather-drive-stick" class="anchor" href="#rather-drive-stick"><span class="octicon octicon-link"></span></a>Rather Drive Stick?</h3>
+    <div class="row">
+        <div class="span4">
+            <div class="banner-img banner-voice"></div>
+            <h2 class="text-center">定制语音</h2>
+            <p class="text-center">
+                Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.
+            </p>
+        </div><!-- /.span4 -->
+        <div class="span4">
+            <div class="banner-img banner-fn-filter"></div>
+            <h2 class="text-center">过滤号码</h2>
+            <p class="text-center">
+                Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.
+            </p>
+        </div><!-- /.span4 -->
+        <div class="span4">
+            <div class="banner-img banner-sms"></div>
+            <h2 class="text-center">二次短信发送</h2>
+            <p class="text-center">
+                Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.
+            </p>
+        </div><!-- /.span4 -->
+    </div><!-- /.row -->
 
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
 
-<h3>
-<a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
 
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
 
-<h3>
-<a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
 
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
-      </section>
+    <!-- START THE FEATURETTES -->
+
+    <hr class="featurette-divider">
+
+    <div class="featurette">
+        <img class="featurette-image pull-right" src="img/browser-icon-chrome.png">
+        <h2 class="featurette-heading">First featurette headling. <span class="muted">It'll blow your mind.</span></h2>
+        <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
     </div>
 
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p class="copyright">Bootstrapdemo maintained by <a href="https://github.com/sherlock221">sherlock221</a></p>
-        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
-      </footer>
+
+    <hr class="featurette-divider">
+
+    <div class="featurette">
+        <img class="featurette-image pull-right" src="img/browser-icon-firefox.png">
+        <h2 class="featurette-heading">First featurette headling. <span class="muted">It'll blow your mind.</span></h2>
+        <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
     </div>
 
-    
+    <hr class="featurette-divider">
 
-  </body>
+    <footer>
+        <p class="pull-right"><a href="#">去顶部</a></p>
+        <p>© 2014 Company, bootstrap. · <a href="#">jab</a> · <a href="#">sherlock</a></p>
+    </footer>
+</div>
+
+
+<script src="js/jquery-1.9.1.min.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+
+</body>
 </html>
